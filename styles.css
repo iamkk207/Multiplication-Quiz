@@ -1,8 +1,8 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: cursive;
-    font-size: 1.5rem;
+    
+    
 }
 
 body{
@@ -17,7 +17,7 @@ body{
 
 .form{
     background-color: #F7EDDB;
-    padding: 10vh;
+    padding: 15vh;
     box-shadow:0 4vh 8vh  #000;
     border-radius: 2vh;
     margin: 2%;
@@ -25,15 +25,15 @@ body{
 }
 
 .score{
-    text-align: right;
+    text-align: center;
     padding: 3%;
     margin: 2%;
 }
 
-h1{
+/*h1{
     padding: 3%;
     margin: 2%;
-}
+}*/
 
 .input{
     display: block;

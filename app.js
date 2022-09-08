@@ -8,7 +8,7 @@ number2 = Math.floor(number2)+1;
 let formElement = document.getElementById("form");
 
 /* Select the questionElement by using getElementById() */
-let questionElement = document.getElementById("question").innerHTML= number1 + "  * " + number2 
+let questioElement = document.getElementById("question").innerHTML="What is " + number1 + " x " + number2 +"?"
 
 /* Calculate the correct answer to compare the answer submitted by user */ 
 let correctAnswer = number1 * number2 ;
@@ -19,6 +19,8 @@ let inputElement = document.getElementById("input");
 /* Select Score element */
 
 let score = document.getElementById("score");
+
+let reset = document.getElementById("reset");
 
 let marks1 = JSON.parse(localStorage.getItem("Marks"));
 
@@ -51,6 +53,17 @@ function submitFunction(){
 function updateLocalStorage(){
     localStorage.setItem("Marks",JSON.stringify(marks1));
 }
+
+
+
+reset.addEventListener("click",resetFunction);
+
+ function resetFunction(){
+    marks1 = 0;
+    score.innerHTML ="Score : " + marks1;
+ }
+
+
 
 
 
