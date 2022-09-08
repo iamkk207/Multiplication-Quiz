@@ -8,7 +8,7 @@ number2 = Math.floor(number2)+1;
 let formElement = document.getElementById("form");
 
 /* Select the questionElement by using getElementById() */
-let questioElement = document.getElementById("question").innerHTML="What is " + number1 + " multiply by " + number2 +"?"
+let questionElement = document.getElementById("question").innerHTML= number1 + "  * " + number2 
 
 /* Calculate the correct answer to compare the answer submitted by user */ 
 let correctAnswer = number1 * number2 ;
