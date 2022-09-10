@@ -41,9 +41,6 @@ function submitFunction(){
 
         marks1++ ;
         updateLocalStorage();
-   // score.innerHTML = "Correct!"
-    
-        
     }else{
        marks1-- ; 
         updateLocalStorage();
@@ -59,6 +56,7 @@ function updateLocalStorage(){
 reset.addEventListener("click",resetFunction);
 
  function resetFunction(){
+    localStorage.clear();
     marks1 = 0;
     score.innerHTML ="Score : " + marks1;
  }
